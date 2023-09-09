@@ -1,4 +1,3 @@
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: Multiply 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 /*
 
@@ -8,10 +7,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b) {
+  return a * b;
+}
 
+console.log(multiply(4, 5));
 
 /*
 
@@ -25,45 +25,41 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age) {
+  return age * 7;
 }
 
-
-
+console.log(catYears(21));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: Convert to Arrow Function  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
+// function myFunction() {
+//   console.log("Function was invoked!");
+// }
 
-/*
+// myFunction();
 
-------------
-function myFunction() {
-console.log("Function was invoked!");
-};
+let myFunction = () => console.log("Function was invoked!");
 
 myFunction();
-----------------
 
-let anotherFunction = function (param) {
-  return param;
-};
+// let anotherFunction = function (param) {
+//   return param;
+// };
 
-anotherFunction("Example");
+let anotherFunction = (param) => param;
 
----------------
+console.log(anotherFunction("Example"));
 
-let add = function (param1, param2) {
-  return param1 + param2;
-};
+// let add = function (param1, param2) {
+//   return param1 + param2;
+// };
 
-add(1,2);
+let add = (param1, param2) => param1 + param2;
 
-*/
-
-
+console.log(add(1, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -83,12 +79,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+function game(user, computer) {
+  /*add your code here*/
 }
-
-
-
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -100,6 +93,6 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(/*add your code here*/) {
+  /*add your code here*/
+}
