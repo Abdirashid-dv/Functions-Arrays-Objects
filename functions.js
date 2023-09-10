@@ -78,10 +78,29 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+const moves = ["Paper", "Scissors", "Rock"];
+const randomIndex = Math.floor(Math.random() * moves.length);
+
+const computerChoice = moves[randomIndex];
+const userChoice = "Paper";
 
 function game(user, computer) {
   /*add your code here*/
+
+  if (user === computer) {
+    return "it's a tie";
+  } else if (
+    (user === "Rock" && computer === "Scissors") ||
+    (user === "Paper" && computer === "Rock") ||
+    (user === "Scissors" && computer === "Paper")
+  ) {
+    return "you win!";
+  } else {
+    return "you lose!";
+  }
 }
+
+console.log(game(userChoice, computerChoice));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -93,6 +112,15 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/) {
+function annoyingSong(startNum) {
   /*add your code here*/
+  for (let i = startNum; i > 0; i--) {
+    console.log(
+      `${startNum} bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${
+        i - 1
+      } bottles of soda on the wall`
+    );
+  }
 }
+
+annoyingSong(99);
